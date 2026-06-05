@@ -1,0 +1,138 @@
+.snake-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.game-header {
+  margin-bottom: 20px;
+}
+
+.title {
+  color: #00ff88;
+  font-size: 32px;
+  text-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+}
+
+.game-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.game-canvas {
+  border: 2px solid #00ff88;
+  border-radius: 8px;
+  background: #0d0d1a;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(13, 13, 26, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.loading-content {
+  text-align: center;
+}
+
+.snake-loader {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.snake-loader .dot {
+  width: 12px;
+  height: 12px;
+  background: #00ff88;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.snake-loader .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.snake-loader .dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+.loading-text {
+  color: #00ff88;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 6px;
+  background: #2a2a4e;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #00ff88;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.visitor-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.info-card {
+  background: #1a1a2e;
+  border: 1px solid #2a2a4e;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  border-color: #00ff88;
+}
+
+.info-label {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-value {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info-value.ua {
+  font-size: 12px;
+  word-break: break-all;
+}

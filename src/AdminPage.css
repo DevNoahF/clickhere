@@ -1,0 +1,67 @@
+.admin-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.admin-container h1 {
+  color: #00ff88;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.visitors-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1a1a2e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.visitors-table th {
+  background: #16213e;
+  color: #00ff88;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.visitors-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #2a2a4e;
+  color: #ddd;
+  font-size: 14px;
+}
+
+.visitors-table tr:hover {
+  background: #2a2a4e;
+}
+
+.error-msg {
+  color: #ff4444;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.loading-msg {
+  color: #00ff88;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.empty-msg {
+  color: #888;
+  font-size: 16px;
+  margin-top: 40px;
+}
